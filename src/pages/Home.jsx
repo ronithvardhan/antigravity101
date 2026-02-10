@@ -2,6 +2,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Sun, CloudRain, Wind, Droplets } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Clock from '../components/ui/Clock';
 
 export default function Home() {
     const { t } = useLanguage();
@@ -19,6 +20,9 @@ export default function Home() {
 
     return (
         <div className="space-y-6">
+            {/* Clock */}
+            <Clock />
+
             {/* Welcome Section */}
             <div className="flex-between" style={{ flexWrap: 'wrap', gap: '1rem' }}>
                 <div className="page-header" style={{ marginBottom: 0 }}>
